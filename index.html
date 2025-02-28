@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/index.css" />
-        <title>JS starter</title>
-    </head>
-    <body>
-        <script src="./src/index.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Text Editor</h1>
+
+        <div class="buttons">
+            <button id="bold">B</button>
+            <button id="italic">I</button>
+            <button id="underline">U</button>
+        </div>
+
+        <div id="text-editor" contenteditable="true" placeholder="Write your text here..."></div>
+
+        <div class="controls">
+            <label for="font-size">Font Size:</label>
+            <select id="font-size">
+                <option value="12px">12px</option>
+                <option value="16px" selected>16px</option>
+                <option value="20px">20px</option>
+                <option value="24px">24px</option>
+            </select>
+
+            <label for="text-color">Text Color:</label>
+            <input type="color" id="text-color">
+
+            <label for="text-align">Text Alignment:</label>
+            <select id="text-align">
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="right">Right</option>
+            </select>
+        </div>
+
+        <button id="toggle-theme">Toggle Dark Mode</button>
+    </div>
+
+    <script src="./src/index.js"></script>
+</body>
 </html>
