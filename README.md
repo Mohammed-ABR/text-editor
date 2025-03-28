@@ -1,1 +1,1 @@
-# Simple calculator
+# Simple text-editor
